@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_title_bar" />
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar_rl_course_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bottom_bar_text_course"
+                style="@style/bottom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="课程" />
+
+            <ImageView
+                android:id="@+id/bottom_bar_img_course"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@id/bottom_bar_text_course"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/main_course_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar_rl_exercises_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bottom_bar_text_exercises"
+                style="@style/bottom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="习题" />
+
+            <ImageView
+                android:id="@+id/bottom_bar_img_exercises"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@id/bottom_bar_text_exercises"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/main_exercises_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar_rl_my_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bottom_bar_text_my"
+                style="@style/bottom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我" />
+
+            <ImageView
+                android:id="@+id/bottom_bar_img_my"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@id/bottom_bar_text_my"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/main_my_icon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

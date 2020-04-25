@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <include layout="@layout/main_title_bar" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/default_icon" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        style="@style/register_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/register_user_name_bg"
+        android:drawableLeft="@drawable/user_name_icon"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/et_psw"
+        style="@style/register_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/register_psw_bg"
+        android:drawableLeft="@drawable/psw_icon"
+        android:inputType="textPassword"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/et_psw_again"
+        style="@style/register_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/register_psw_again_bg"
+        android:drawableLeft="@drawable/psw_icon"
+        android:inputType="textPassword"
+        android:hint="请再次确认密码" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/register_selector"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+</LinearLayout>
